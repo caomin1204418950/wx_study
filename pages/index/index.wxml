@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="zhezhao {{addActive==0?'add_active':''}}" bindtouchend='cancelAddItems'></view>
+<view class='container'>
+  <view class='headScroll'>
+    <scroll-view scroll-x='true' class='scroll_list'>
+      <view class="scroll-view-item {{active==0?'active':''}}" bindtap='changecolor' touchstart='startTouch' data-index="0">全部</view>
+      <view class="scroll-view-item {{active==1?'active':''}}" bindtap='changecolor' data-index="1">Html</view>
+      <view class="scroll-view-item {{active==2?'active':''}}" bindtap='changecolor' data-index="2">JavaScript</view>
+      <view class="scroll-view-item {{active==3?'active':''}}" bindtap='changecolor' data-index="3">Java</view>
+      <view class="scroll-view-item {{active==4?'active':''}}" bindtap='changecolor' data-index="4">Css</view>
+      <view class="scroll-view-item {{active==5?'active':''}}" bindtap='changecolor' data-index="5">Python</view>
+      <view class="scroll-view-item {{active==6?'active':''}}" bindtap='changecolor' data-index="6">C/C++</view>
+    </scroll-view>
+  </view>
+  <view class='container_search_add'>
+    <view class='search'>
+      <input placeholder='搜索问题或关键字' style='font-size:30rpx;text-align:center;'></input>
+    </view>
+    <view class='searchImg'>
+      <image src='../../image/search.png' class='search_img' />
+    </view>
+    <view class='addImag' bindtap='addItems'> 
+      <image src='../../image/write.png' class='add_img' />
+    </view>
+  </view>
+
+  <view class="{{addActive==0?'add_active':'add_table'}}">
+    <view class='addItems'>
+      <view class="addQuestion" bindtap='addQuestion'>
+        <text>提问题</text>
+      </view>
+      <view class='addNode' bindtap='writeNodes'>
+        <text>记笔记</text>
+      </view>
+      <view class='addArticle' bindtap='writeArticles'>
+        <text>写文章</text>
+      </view>
+      <view class='caoGao' bindtap='caoGao'>
+        <text>草稿箱</text>
+      </view>
+    </view>
+    <view class='cancel' bindtouchend='cancelAddItems'>取消</view>
+    
+  </view>
+  <view class='container_body'>
+    <view class='body_items' wx:for="{{items}}" wx:key="{{items.index}}">
+      <view class='item_title'>{{item.title}}</view>
+      <view class='item_username_pushtime'>
+        <view class='item_username'></view>
+        <view class='item_pushtime'></view>
+      </view> 
+      <view class='item_stars_pinglun'>
+        <view class='item_stars'></view>
+        <view class='item_pinglun'></view>
+      </view>
+    </view>
+     
+  </view>
+  <tabBar selectTabBar = "0" ></tabBar>
+</view>

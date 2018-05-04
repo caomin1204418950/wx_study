@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="{{(avatarUrl!=''&&nickName!='')?'headLogin':'noLogin'}}" bindtap='changeMessage'>
+      <view class='avatar'>
+        <image src='{{avatarUrl}}' class='avatarImg'></image>
+      </view>
+      <view class='userName'>
+          <text >{{nickName}}</text>
+      </view>
+  </view> 
+  <view class="{{(avatarUrl!=''&&nickName!='')?'noLogin':'pleaseLogin'}}">
+      <view class='avatar'>
+        <image src='../../image/user.png' class='noUserImg'></image>
+      </view>
+      <view class='login_design'>
+          <view class='login' bindtap='intoLogin'>登录</view>
+          <view class='or'>/</view>
+          <view class='design' bindtap='intoDesign'>注册</view>          
+      </view>
+  </view>
+  <view class='myItems'>  
+      <view class='Items_first'>最新动态</view>
+      <view class='Items_second'>
+        <view class='Items_second_first'>我的消息</view>
+        <view class='Items_second_second'>我的私信</view>        
+      </view>
+      <view class='Items_second'>
+        <view class='Items_second_first'>我的关注</view>
+        <view class='Items_second_second'>我的收藏</view>        
+      </view>
+      <view class='Items_first' bindtap='intoSetup'>设置</view>      
+  </view>
+  <tabBar selectTabBar = "3" ></tabBar>
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/writeArticles/writeArticles",
+    "pages/writeNodes/writeNodes",
+    "pages/login/login",
+    "pages/design/design",
+    "pages/reset/reset",
+    "pages/major/major",
+    "pages/setUp/setUp",
+    "pages/question/question",
+    "pages/mine/mine",
+    "pages/pushQuestion/pushQuestion",
+    "pages/caogao/caogao"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009A61",
+    "navigationBarTitleText": "wxStudy",
+    "navigationBarTextStyle": "white"
+  }
+}

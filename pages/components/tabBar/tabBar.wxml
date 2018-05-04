@@ -1,0 +1,7 @@
+  <view class='tabBar'>
+      <view class='tabBar_item' wx:for="{{tabBar}}" wx:key="{{index}}" bindtap="selectBar"> 
+        <view class="item_text {{selectTabBar===item.index?'selectItem':''}}" data-index="{{item.index}}" data-path="{{item.pagePath}}"  >   
+            {{item.text}}
+        </view>
+      </view>
+  </view>

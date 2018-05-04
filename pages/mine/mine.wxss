@@ -1,0 +1,148 @@
+/* pages/mine/mine.wxss */
+.container{
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 100vh;
+}
+.headLogin{
+  width: 100%;
+  height: 130rpx;
+  background-color:#FFFFFF;  
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #E7E7E7;
+}
+.noLogin{
+  display: none;
+}
+.avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-top: 5rpx;
+  margin-left: 25rpx;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center
+}
+.avatarImg{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;  
+}
+.userName{
+  width: 250rpx;
+  height: 100rpx; 
+  margin-top: 15rpx;
+  margin-left: 20rpx; 
+  display: flex;
+  flex-direction: row;
+  justify-content: start; 
+  align-items: center;
+}
+
+.userName text{
+  display: block; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+
+.pleaseLogin{
+   width: 100%;
+  height: 130rpx;
+  background-color:white;   
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2rpx solid #E7E7E7;
+}
+.noUserImg{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;  
+}
+.login_design{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login{
+  margin-left: 20rpx;
+}
+.or{
+  margin-left: 10rpx;
+}
+.design{
+  margin-left: 10rpx;
+}
+.Items_first{
+  width: 725rpx;
+  height: 100rpx;
+  padding-left: 25rpx;
+  background-color: #FFFFFF;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25rpx;
+  border-top: 3rpx solid #D7D6DA;
+  border-bottom: 3rpx solid #D1D0D4;
+  font-size: 35rpx;
+}
+.Items_second{
+  width: 100%;
+  height: 200rpx;
+  background-color: #FFFFFF;
+  margin-top: 25rpx;
+  border-bottom: 3rpx solid #D1D0D4;
+  border-top: 3rpx solid #D7D6DA;
+  font-size: 35rpx;
+}
+.Items_second_first{
+  width: 725rpx;
+  height: 98rpx;
+  border-bottom: 3rpx solid #D1D0D4;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Items_second_second{
+  width: 725rpx;
+  height: 99rpx;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tabBar{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+.tabBar_item{
+  width: 25%;
+  /* background-color: red; */
+}
+.item_img{
+  width: 100%;
+  height: 75rpx;
+}
+.item_text{
+  width: 100%;
+  text-align: center;
+  /* background-color: green; */
+  font-size: 35rpx;
+  color: #9f9f9f;
+}
+.selectItem{
+  width: 100%;
+  text-align: center;
+  /* background-color: green; */
+  font-size: 35rpx;
+  color: #27a979;
+}

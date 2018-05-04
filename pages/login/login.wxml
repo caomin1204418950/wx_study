@@ -1,0 +1,36 @@
+<view class="{{resetActive==0?'noactive':'zhezhao'}}"bindtouchend='cancelzhezhao'></view>
+<view class="container">
+  <view class='title' >
+    <text style='color:#0d131a'>wx</text>
+    <text style='color:#009a61'>Study</text>
+  </view>
+  <view class='body'>
+    <view class='username'>
+      <input placeholder='Email'  bindinput='getEmail'></input>
+    </view>
+    <view class='password'>
+      <input class="input" password="{{isshow}}" placeholder='密码'  bindinput='getpassword' value="{{ password }}"></input>
+        <view class='seepassword' bindtap='seepassword'>
+          <view class='eye'>
+            <view class='eyeball'></view>
+          </view>
+        </view>
+    </view>
+  </view>
+  <view class="{{(Email!=''&&password!='')?'noactive':'nologin'}}">登录</view>
+  <view class="{{(Email!=''&&password!='')?'login':'noactive'}}" bindtap='login'>登录</view>
+  <view class='design_reset'>
+    <view class='wxlogin' bindtap='wxlogin'>微信登录</view> 
+    <view class='design' bindtap='design'>注册账号</view>
+    <view class='reset' bindtap='reset'>忘记密码</view>
+  </view>
+  <view class="{{resetActive==0?'noactive':'container_resetWay'}}">
+    <view class='resetWay'>
+      <view class='chooice'>选择重置密码方式</view>
+      <view class='byEmail' bindtap='Email'>通过Email重置密码</view>
+      <view class='byTel' bindtap='Tel'>通过手机号重置</view>
+    </view>
+    <view class='cancel' bindtouchend='cancelzhezhao'>取消</view>
+  </view>
+</view>
+

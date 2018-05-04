@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='bodyOne'>
+    <view class='news'>消息推送设置</view>
+    <view class='password'>账号和密码</view>
+  </view>
+  <view class='bodyTwo'>
+    <view class='return'>意见反馈</view>
+    <view class='banben'>当前版本</view>
+  </view>
+  <view class='bodyThree'>
+    <view class='clean'>清除缓存</view>  
+  </view>
+  <view class='bodyFour' bindtap='edit'>
+    <view class='edit'>退出登录</view>      
+  </view>
+</view>

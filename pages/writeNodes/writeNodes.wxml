@@ -1,0 +1,14 @@
+<view class='container'>
+  <view class='topic'>
+    <input  class='inputOne' placeholder='笔记描述'></input>
+  </view>
+  <view class='tip'>
+    <input class='inputTwo' placeholder=' 标签，如：html/css , java'></input>  
+  </view>
+  <view class='content'>
+    <textarea maxlength=''></textarea>  
+  </view>
+  <view class='push'>
+    <button class='pushButton'>保存</button>
+  </view>
+</view>

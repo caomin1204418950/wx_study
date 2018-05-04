@@ -1,0 +1,4 @@
+<!--pages/major/major.wxml-->
+<view class='container'>专栏
+  <tabBar selectTabBar = "1" ></tabBar>
+</view>

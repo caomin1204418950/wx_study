@@ -1,0 +1,14 @@
+<view class='container'>
+  <view class='topic'>
+    <input  class='inputOne' placeholder='标题: 简单明了，问号结尾'></input>
+  </view>
+  <view class='tip'>
+    <input class='inputTwo' placeholder=' 标签，如：html/css , java'></input>  
+  </view>
+  <view class='content'>
+    <textarea  placeholder='  写下你的问题' maxlength=''></textarea>  
+  </view>
+  <view class='push'>
+    <button class='pushButton'>发布</button>
+  </view>
+</view>

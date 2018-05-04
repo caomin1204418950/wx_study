@@ -1,0 +1,30 @@
+<view class='container'>
+  <view class='title'>
+    <text style='color:#0d131a'>wx</text>
+    <text style='color:#009a61'>Study</text>
+  </view>
+
+  <view class='body'>
+    <view class='name'>
+      <input placeholder='真实姓名或常用昵称' bindinput='getName'></input>
+    </view>
+    <view class='username'>
+      <input placeholder='Email' bindinput='getEmail'></input>
+    </view>
+    <view class='password'>
+      <input placeholder='密码' class='input' password="true" bindinput='getpassword'></input>
+    </view>
+    <view class='repassword'>
+      <input class="input" password="{{isshow}}" placeholder='确认密码' bindinput='getrepassword' value="{{ repassword }}"></input>
+      <view class='seepassword' bindtap='seerepassword'>
+        <view class='eye'>
+          <view class='eyeball'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="{{(name!=''&&Email!=''&&password!=''&&repassword!='')?'active':'nodesign'}}">注册</view>
+  <view class="{{(name!=''&&Email!=''&&password!=''&&repassword!='')?'design':'active'}}" bindtap='design'>注册</view>
+    <view class='teldesign' bindtap='telDesign'>手机号注册</view> 
+
+</view>

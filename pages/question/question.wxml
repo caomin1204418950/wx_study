@@ -1,0 +1,3 @@
+<view class='container'>问答
+  <tabBar selectTabBar = "2" ></tabBar>
+</view>
