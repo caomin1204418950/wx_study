@@ -1,0 +1,6 @@
+<view class="container">
+  <view class='topic'>关于this的指向问题</view>
+  <view class='content'>this指向哪</view>
+  <textarea class='answer' maxlength=''bindinput='getAnswer' placeholder='我也来回答'></textarea>
+  <view class='push' bindtap='pushAnswer'>发表</view>
+</view>

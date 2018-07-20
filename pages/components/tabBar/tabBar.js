@@ -17,6 +17,7 @@ Component({
       var path = e.target.dataset.path;
       path = path.replace(/pages/, "..");
       console.log(path)
+      
       wx.redirectTo({
         url: path,
       })

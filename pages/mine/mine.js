@@ -47,6 +47,7 @@ Page({
             nickName: res.userInfo.nickName,
             avatarUrl: res.userInfo.avatarUrl
           })
+          console.log(res)
         },
       })
       

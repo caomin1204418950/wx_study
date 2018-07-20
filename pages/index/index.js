@@ -8,42 +8,72 @@ Page({
     touch:false,
     addActive:0,
     wxlogin:'',
+    pinglun:0,
+    selectTuisong:'',
     items:[
       {
-        "title":"推送一"
+        "title":"推送一",
+        "id":"0",
+        "star":0,
+        "content":'内容一'
+
       },
       {
-        "title": "推送二"
+        "title": "推送二",
+        "id": "1",
+        "star": 1,
+        "content": '内容二'
       },
       {
-        "title": "推送三"
+        "title": "推送三",
+        "id": "2",
+        "star": 2,
+        "content": '内容三'
       },
       {
-        "title": "推送四"
+        "title": "推送四",
+        "id": "3",
+        "star": 3
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "4",
+        "star": 4
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "5",
+        "star": 5
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "6",
+        "star": 6
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "7",
+        "star": 7
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "8",
+        "star": 0
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "9",
+        "star": 1
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "10",
+        "star": 2
       },
       {
-        "title": "推送一"
+        "title": "推送一",
+        "id": "11",
+        "star": 3
       }
     ],
     
@@ -92,6 +122,11 @@ Page({
       url: '/pages/caogao/caogao',
     })
   },
+  intoArticle:function(e){
+    wx.navigateTo({
+      url: '/pages/articlesTuisong/articlesTuisong',
+    })
+  },
   tabBarNavigate(e){
     var path = e.target.dataset.path;
     path = path.replace(/pages/, "..");
@@ -105,6 +140,15 @@ Page({
       selectTabBar: e.target.dataset.index,
     })
     this.tabBarNavigate(e)
+  },
+  addStars:function(e){
+    var a = e.currentTarget.dataset.id
+    var stars = this.data.items[a].star+1;
+    var dataStars = "items["+a+"].star"
+    this.setData({
+      [dataStars]: stars
+    })
+
   },
   onLoad: function (options) {
     console.log(app.globalData.wxlogin)

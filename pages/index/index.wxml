@@ -43,15 +43,21 @@
     
   </view>
   <view class='container_body'>
-    <view class='body_items' wx:for="{{items}}" wx:key="{{items.index}}">
+    <view class='body_items' wx:for="{{items}}" wx:key="{{items.index}}" bindtap='intoArticle'>
       <view class='item_title'>{{item.title}}</view>
       <view class='item_username_pushtime'>
-        <view class='item_username'></view>
-        <view class='item_pushtime'></view>
+        <view class='item_username'>秋水白</view>
+        <view class='item_pushtime'> 刚刚</view>
       </view> 
       <view class='item_stars_pinglun'>
-        <view class='item_stars'></view>
-        <view class='item_pinglun'></view>
+        <view class='item_stars' data-id='{{item.id}}' bindtap='addStars'>
+          <image src='../../image/star.png' class='starsImg'></image>
+          <view class='star_pinglunNum'>{{item.star}}</view>
+        </view>
+        <view class='item_pinglun'>
+          <image src='../../image/pinglun.png' class='pinglunImg'></image>
+          <view class='star_pinglunNum'>{{pinglun}}</view>              
+        </view>
       </view>
     </view>
      
